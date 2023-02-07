@@ -10,7 +10,11 @@ const countriesList = document.querySelector('.country-list');
 const countryInfo = document.querySelector('.country-info');
 const searchBox = document.querySelector('#search-box');
 
+const ul = document.querySelector('ul');
+const body = document.querySelector('body');
 
+body.style.backgroundImage = 'radial-gradient( circle 610px at 5.2% 51.6%,  rgba(255, 255, 255) 0%, rgba(220, 240, 250) 98.5% )';
+ul.style.listStyle = 'none';
 
 
 searchBox.addEventListener('input', debounce(onInputSearch, DEBOUNCE_DELAY));
